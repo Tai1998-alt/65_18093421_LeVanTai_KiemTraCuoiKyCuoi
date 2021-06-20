@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918859508285",
+    "project_id": "leanh-2b928",
+    "storage_bucket": "leanh-2b928.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918859508285:android:1de641a1aed8a6d4d15854",
+        "android_client_info": {
+          "package_name": "com.example.levantai_18093421_65"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918859508285-liheirf0bqpedeus8lq2hqhca1ib24g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvXyQC8hbdsAMkttVBnc0vly1e5tu2iWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918859508285-liheirf0bqpedeus8lq2hqhca1ib24g5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
