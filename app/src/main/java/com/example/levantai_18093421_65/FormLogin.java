@@ -63,7 +63,7 @@ public class FormLogin extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
-                            startActivity(new Intent(FormLogin.this, MainActivity.class));
+                            startActivity(new Intent(FormLogin.this, Screen02.class));
                         } else {
                             new AlertDialog.Builder(FormLogin.this)
                                     .setTitle("Confirm")

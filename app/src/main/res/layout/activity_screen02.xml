@@ -12,50 +12,71 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="58dp" />
+        android:hint="Search"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Group"
-        tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="53dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@drawable/group" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
         app:srcCompat="@drawable/anh2"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="166dp" />
+        tools:layout_editor_absoluteX="261dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="56dp"
         android:text="Welcome"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="185dp" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="36dp"
         android:text="Earth laughts through flowers so let her laugh."
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="256dp" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlant"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlant"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="@+id/btnPlant" />
 
     <Button
         android:id="@+id/btnPlant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:text="How to plant"
         app:backgroundTint="#88BC87"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        tools:layout_editor_absoluteX="24dp" />
 
     <View
         android:id="@+id/view"
@@ -65,10 +86,12 @@
         android:layout_marginLeft="12dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
+        android:layout_marginBottom="36dp"
         android:background="#88BC87"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="400dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
@@ -109,6 +132,7 @@
         app:srcCompat="@drawable/removebgpreview" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="399dp"
         android:layout_height="159dp"
         app:layout_constraintBottom_toBottomOf="parent"
